@@ -1,0 +1,43 @@
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addTask, removeTask } from "./ReduxSlice";
+import { createStore } from 'Redux';
+
+const ReduxComponent = () => {
+ 
+// Creating store
+// const store = createStore(taskList);
+ 
+// // Here add is action as you can see console,
+// // its an object with some info
+// const add = addTask('Wake up');
+// console.log(add);
+ 
+// // Dispatch usually trigger reducer and perform task
+// store.dispatch(add);
+ 
+// // getState() function is used to get current state
+// console.log(store.getState());
+ 
+// store.dispatch(addTask('Study'));
+// store.dispatch(addTask('Eat'));
+// store.dispatch(addTask('Go to sleep'));
+// store.dispatch(removeTask('Eat'));
+// store.dispatch(addTask('Work'));
+// store.dispatch(addTask('Sleep'));
+// store.dispatch(removeTask('Sleep'));
+ 
+// console.log(store.getState());
+
+  const dispatch = useDispatch();
+
+return(
+ <div>
+      <h1>Redux Counter</h1>
+   
+      <button onClick={() => dispatch(addTask())}>Increment</button>
+      <button onClick={() => dispatch(removeTask())}>Decrement</button>
+    </div>
+);
+};
+export default ReduxComponent; 

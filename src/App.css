@@ -28,6 +28,37 @@
   color: #61dafb;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+.nav-item {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* centers items horizontally */
+  align-items: center;    /* centers items vertically */
+  height: 100vh;          /* full viewport height */
+  background-color: #f0f0f0;
+}
+
+.box {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

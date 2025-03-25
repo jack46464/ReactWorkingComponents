@@ -12,6 +12,7 @@ import LearnRedux  from './components/Redux/LearnRedux';
 import ReduxComponent from './components/Redux/ReduxComponent';
 import ReactStore from './components/Redux/ReactStore';
 import ReduxWork from './components/Redux/ReduxWork';
+import SSEComponent  from './components/SSEWork';
 function App() {
   return (
 
@@ -27,6 +28,7 @@ function App() {
       <NavLink to='ErrorBoundray' style={{padding:"20px"}}>ErrorBoundray</NavLink>
       <NavLink to='UseCallback' style={{padding:"20px"}}>Use Callback</NavLink>
       <NavLink to='Redux' style={{padding:"20px"}}>Redux</NavLink>
+      <NavLink to='SSEComponent' style={{padding:"20px"}}>SSEComponent</NavLink>
     </nav>
     <Routes>
       <Route path='/' element={<AddNew />}></Route>
@@ -35,6 +37,7 @@ function App() {
       <Route path='ErrorBoundray' element={<ErrorBoundary />}></Route>
       <Route path='UseCallback' element={<CallbackParent />}></Route>
       <Route path='Redux' element={<ReduxWork />}></Route>
+      <Route path='SSEComponent' element={<SSEComponent />}></Route>
     </Routes>
     </>
   );
